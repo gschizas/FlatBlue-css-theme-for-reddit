@@ -280,7 +280,7 @@ body:not(.search-page) #search input[type="text"] {
 }
 
 body:not(.search-page) #search input[type=submit] {
-    top: 132px;
+    top: 112px;
 }
 
 #searchexpando {
