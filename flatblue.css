@@ -30,7 +30,7 @@ html {
 
 /* Font family declaration, fonts can be changed here */
 body {
-	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Verdana, Geneva, Tahoma, Helvetica, Arial, sans-serif !important;
 	font-weight: normal !important;
 }
 
@@ -110,7 +110,7 @@ body .side .title,
 
 /* misc stuff */ 
 a:hover, a:visited:hover {
-	color: #97CE68;
+	color: #1000C0;
 }
 
 input {
@@ -196,9 +196,7 @@ a[href$="#spoiler"]::before {
 	color: #000!important;
 	padding: 0px 1px;
 	margin: 0px;
-	letter-spacing: 1px;
 	margin-right: 1px;
-	text-transform: uppercase;
 }
 
 a[href$="#spoiler"]::before {
@@ -213,8 +211,6 @@ a[href$="#spoiler"][title]::before {
 .md h1, .commentarea h1, .wiki-page .wiki-page-content .md .wiki h1 {
 	color: #000000 !important;
 	border-bottom: 1px solid #BDBAB4;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	font-weight: normal !important;
 	display: block;
 	padding-left: 2px;
@@ -223,8 +219,6 @@ a[href$="#spoiler"][title]::before {
 .md h2, .commentarea h2, .wiki-page .wiki-page-content .md .wiki h2, .flairselector h2 {
 	color: #000000 !important;
 	border-bottom: 1px solid #BDBAB4;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	font-weight: normal !important;
 	display: block;
 	padding-left: 2px;
@@ -234,8 +228,6 @@ a[href$="#spoiler"][title]::before {
 .md h3, .commentarea h3, .wiki-page .wiki-page-content .md .wiki h3, .sidecontentbox .title h1, .submit-page .title, .submit_text h1 {
 	color: #000000 !important;
 	border-bottom: 1px solid #BDBAB4;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	font-weight: normal !important;
 	display: block;
 	padding-left: 2px;
@@ -261,25 +253,27 @@ NOTE: when changing this you also have to change the positioning of other elemen
   
 #header-img {
 	margin: 0px;
-	margin-top: 56px;
+	margin-top: 36px;
 	margin-left: 11px;
 }
 
 body:not(.search-page) #search input[type="text"] {
-	top: 128px;
+	top: 108px;
 }
 
 #searchexpando {
-	top: 152px;
+	top: 132px;
 }
 
 .side blockquote blockquote blockquote {
-	top: 117px;
+	top: 97px;
 }
 
+/*
 #header-bottom-left .tabmenu, .tabmenu.formtab, a[name=content] {
 	top: 165px;
 }
+*/
 
 #header-bottom-left ul {
 	position: absolute;
@@ -289,22 +283,19 @@ body:not(.search-page) #search input[type="text"] {
 #header-img-a {
 	vertical-align: bottom;
 	display: inline-block;
-	height: 100px;
+	height: 80px;
 }
 
 /* Name of your subreddit with the first letters in capital */ 
 .hover.pagename.redditname {
 	display: inline-table;
-	letter-spacing: 2px;
 	font-variant: normal;
-	text-transform: capitalize;
 	font-weight: normal;
 	color: #fff;
 }
 
 .hover.pagename.redditname > a:before {
 	content: "/r/";
-	text-transform: none;
 }
 
 .hover.pagename.redditname a {
@@ -323,16 +314,12 @@ body #sr-header-area, body #sr-header-area a {
 	border-bottom: 0;
 }
 
-#sr-header-area {
-	text-transform: lowercase;
-}
-
 #RESShortcutsEditContainer, #RESShortcutsRight, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsLeft, #sr-more-link, #RESShortcutsSort {
 	background-color: #FAFAFA !important;
 }
 
 .subscribe-button .RESshortcutside:hover {
-	background-color: #97CE68;
+	background-color: #1000C0;
 }
 
 /* login form, moved more prominently into view */
@@ -371,7 +358,6 @@ body #sr-header-area, body #sr-header-area a {
 	background-color: #4BA6E0;
 	padding: 2px !important;
 	color: #FFF;
-	letter-spacing: 1px;
 	line-height: 16px;
 	top: 19px;
 	bottom: auto;
@@ -406,8 +392,6 @@ body:not(.search-page) #search input[type="text"] {
 	border: 1px;
 	height: 22px;
 	padding: 2px;
-	letter-spacing: 1px;
-
 	font-weight: normal !important;
 }
 
@@ -445,8 +429,6 @@ blockquote blockquote blockquote {
 
 .side blockquote blockquote blockquote h6 {
 	color: #333 !important;
-	text-transform: none;
-	letter-spacing: 1px;
 	background: none;
 	vertical-align: middle;
 	display: table-cell;
@@ -457,7 +439,7 @@ blockquote blockquote blockquote {
 }
 
 .side blockquote blockquote blockquote h6 a:hover {
-	color: #97CE68;
+	color: #1000C0;
 }
 
 /* tabmenu */
@@ -470,17 +452,16 @@ blockquote blockquote blockquote {
 	line-height: 20px;
 	display: inline-block;
 	font-weight: normal;
-	letter-spacing: 2px;
 }
 
 .tabmenu li a:hover, .tabmenu.formtab li a:hover {
-	background-color: #97CE68;
+	background-color: #1000C0;
 	color: #fff;
 }
 
 .tabmenu li.selected a, .tabmenu.formtab li.selected a {
 	color: #FFF;
-	background-color: #97CE68;
+	background-color: #1000C0;
 	border: 0;
 	z-index: 100;
 	height: 20px;
@@ -489,7 +470,7 @@ blockquote blockquote blockquote {
 }
 
 #header-bottom-left .tabmenu, .tabmenu.formtab, a[name=content] {
-	position: absolute;
+/*	position: absolute;*/
 	left: 0px;
 	right: 0px;
 	z-index: 1;
@@ -497,7 +478,7 @@ blockquote blockquote blockquote {
 	line-height: 20px;
 	padding: 0;
 	padding-left: 10px;
-	background-color: #E9E9E9;
+/*	background-color: #E9E9E9;*/
 	margin: 0;
 }
 
@@ -544,8 +525,8 @@ blockquote blockquote blockquote {
 
 .linkinfo .upvotes, .linkinfo .downvotes, .linkinfo .score {
 	float: left;
-	padding: 5px 10px 5px 0;
-	margin: 0 8px 0 0;
+/*	padding: 5px 10px 5px 0;
+	margin: 0 8px 0 0;*/
 	text-align: center;
 }
 
@@ -565,7 +546,7 @@ blockquote blockquote blockquote {
 }
 
 .linkinfo .date {
-	display: none;
+/*	display: none;*/
 }
 
 /*
@@ -575,7 +556,7 @@ blockquote blockquote blockquote {
 */
 
 .content {
-	margin: 66px 0px 0px 0px;
+/*	margin: 66px 0px 0px 0px;*/
 }
 
 body:not(.listing-page):not(.comments-page) .content {
@@ -583,9 +564,11 @@ body:not(.listing-page):not(.comments-page) .content {
 }
 
 /* submission listing*/
-.rank {
-	display: none;
+.link .rank {
+	margin-top: 26px;
+	margin-right: 18px;
 }
+
 
 .domain {
 	position: relative;
@@ -630,6 +613,7 @@ body .linklisting {
 	border-bottom: solid 1px #E9E9E9;
 }
 
+/*
 .thing .title:visited {
 	color: #B0C2CE !important;
 }
@@ -639,8 +623,9 @@ body .linklisting {
 }
 
 .thing .title:hover, .thing .title:visited:hover {
-	color: #97CE68 !important;
+	color: #1000C0 !important;
 }
+*/
 
 p.title {
 	position: relative;
@@ -781,7 +766,7 @@ color: #858585;
 }
 
 .entry {
-	padding: 5px 0px 10px 0px;
+
 }
 
 .entry .tagline {
@@ -797,7 +782,7 @@ color: #858585;
 }
 
 .entry .buttons li, .entry .tagline {
-    letter-spacing: 1px;
+
 }
 
 
@@ -964,8 +949,6 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	background-color: #E7E6E3;
 	border: 0;
 	width: 500px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	color: #333;
 	padding: 9px;
 }
@@ -986,8 +969,6 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 
 #suggested-reddits {
 	margin-top: 5px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 }
 
 .content.submit .info-notice {
@@ -996,12 +977,10 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	padding: 9px;
 	color: #FFF;
 	margin-bottom: 12px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
 }
 
 .content.submit .info-notice a:hover {
-	color: #97CE68;
+	color: #1000C0;
 }
 
 .content.submit .info-notice a {
@@ -1019,8 +998,6 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	vertical-align: middle;
 	color: #000!important;
 	border-bottom: 1px solid #BDBAB4;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	font-weight: normal !important;
 	padding-left: 2px;
 	padding-top: 10px;
@@ -1032,7 +1009,7 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 
 .wiki-page .pageactions .wikiaction-current {
 	color: #FFF;
-	background-color: #97CE68;
+	background-color: #1000C0;
 }
 
 .wiki-page .pageactions .wikiaction {
@@ -1042,7 +1019,6 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	padding-bottom: 3px;
 	padding-right: 10px;
 	padding-left: 10px;
-	letter-spacing: 2px;
 }
 
 .pageactions a {
@@ -1055,7 +1031,7 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 }
 
 .wiki-page .content .pageactions a:hover {
-	background-color: #97CE68;
+	background-color: #1000C0;
 	color: #FFF;
 }
 
@@ -1072,8 +1048,6 @@ div.wiki div.toc {
 	float: right;
 	max-width: 40%;
 	border-color: #C1BFBF;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	background: #FFF;
 }
 
@@ -1100,8 +1074,6 @@ body div.side {
 	background-color: #4BA6E0 !important;
 	color: #FFF;
 	display: block;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	border-radius: 3px;
 	background: none;
 	border: 0;
@@ -1115,7 +1087,7 @@ body div.side {
 }
 
 .side .sidecontentbox a.helplink:hover {
-	background-color: #97CE68 !important;
+	background-color: #1000C0 !important;
 }
 
 .side .spacer {
@@ -1124,8 +1096,6 @@ body div.side {
 
 .morelink {
 	display: block;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	border-radius: 3px;
 	background: none;
 	border: 0;
@@ -1142,7 +1112,7 @@ body div.side {
 }
 
 body .morelink:hover {
-	background-color: #97CE68;
+	background-color: #1000C0;
 }
 
 .morelink .nub {
@@ -1174,7 +1144,7 @@ h1.redditname {
 }
 
 h1.redditname:hover {
-	background-color: #97CE68;
+	background-color: #1000C0;
 }
 
 .hover a:hover {
@@ -1200,8 +1170,6 @@ h1.redditname:hover {
 }
 
 .subButtons .RESshortcutside, .subButtons .RESDashboardToggle {
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	border-radius: 3px;
 	border: 0;
 	font-weight: normal;
@@ -1224,8 +1192,6 @@ h1.redditname:hover {
 }
 
 .titlebox .fancy-toggle-button a {
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	background: none;
 	border: 0;
 	font-weight: normal;
@@ -1242,7 +1208,7 @@ h1.redditname:hover {
 .titlebox .fancy-toggle-button .add {
 	border: none;
 	background-image: none;
-	background-color: #97CE68;
+	background-color: #1000C0;
 }
 
 .side .content {
@@ -1250,8 +1216,6 @@ h1.redditname:hover {
 }
 
 .side .word, .side .number {
-	letter-spacing: 1px;
-	text-transform: uppercase;
 	font-weight: normal;
 }
 
@@ -1269,8 +1233,6 @@ h1.redditname:hover {
 /* colored boxes in the sidebar idea comes from rolmos's edurne theme*/
 .side h6 {
 	color: #FFF!important;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	font-weight: normal!important;
 	display: block;
 	padding-left: 2px;
@@ -1289,8 +1251,6 @@ h1.redditname:hover {
 
 .side h5 {
 	color: #FFF!important;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	font-weight: normal!important;
 	display: block;
 	padding-left: 2px;
@@ -1309,13 +1269,11 @@ h1.redditname:hover {
 
 .side h4 {
 	color: #FFF!important;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	font-weight: normal!important;
 	display: block;
 	padding-left: 2px;
 	font-size: 140%;
-	background: #97CE68;
+	background: #1000C0;
 }
 
 .side h4+blockquote {
@@ -1356,18 +1314,15 @@ Most things flair related
 }
 
 .title .linkflairlabel {
-	display: table;
 	background-color: transparent;
 	border-width: 0px;
 	border-radius: 0px;
-	color: #C1BFBF;
-	letter-spacing: 2px;
-	text-transform: uppercase;
+	color: #979797;
 	font-weight: normal;
-	overflow: visible;
-	max-width: 98%;
+/*	max-width: 98%; */
 }
 
+/*
 .thing.linkflair .entry {
 	border-right: 10px solid #808080;
 }
@@ -1375,62 +1330,72 @@ Most things flair related
 .thing.linkflair .linkflairlabel {
 	border-bottom: solid 2px #808080;
 }
+*/
 
-.thing.linkflair.linkflair-a .entry, .flairselector .linkflair-a {
-	border-right: 10px solid #E18879;
+.thing.linkflair .linkflairlabel::before {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	content: '';
+	margin: 0 5px -1px 0;
+	background: url(%%sprite-icon-16%%) no-repeat top left;
 }
 
-.thing.linkflair.linkflair-a .linkflairlabel {
-	border-bottom: solid 2px #E18879;
+/*
+.thing.linkflair.linkflair-funny, .flairselector .linkflair-funny {
+	border-right: 10px solid #FFFFFF;
 }
 
-.thing.linkflair.linkflair-b .entry, .flairselector .linkflair-b {
-	border-right: 10px solid #e1aa79;
+.thing.linkflair.linkflair-funny .linkflairlabel {
+	border-bottom: solid 2px #FFFFFF;
+}
+*/
+
+.thing.linkflair.linkflair-funny .linkflairlabel::before, .linkflair-funny .linkflairlabel::before{
+	background-position: 0 -10098px;
 }
 
-.thing.linkflair.linkflair-b .linkflairlabel {
-	border-bottom: solid 2px #e1aa79;
+.thing.linkflair.linkflair-culture .linkflairlabel::before, .linkflair-culture .linkflairlabel::before {
+	background-position: 0 -2856px;
 }
 
-.thing.linkflair.linkflair-c .entry, .flairselector .linkflair-c {
-	border-right: 10px solid #bbe179;
+.thing.linkflair.linkflair-economy .linkflairlabel::before, .linkflair-economy .linkflairlabel::before {
+	background-position: 0 -7684px;
 }
 
-.thing.linkflair.linkflair-c .linkflairlabel {
-	border-bottom: solid 2px #bbe179;
+.thing.linkflair.linkflair-entertainment .linkflairlabel::before, .linkflair-entertainment .linkflairlabel::before {
+	background-position: 0 -7514px;
 }
 
-.thing.linkflair.linkflair-d .entry, .flairselector .linkflair-d {
-	border-right: 10px solid #79e1d1;
+.thing.linkflair.linkflair-meta .linkflairlabel::before, .linkflair-meta .linkflairlabel::before {
+	background-position: 0 -6154px;
 }
 
-.thing.linkflair.linkflair-d .linkflairlabel {
-	border-bottom: solid 2px #79e1d1;
+.thing.linkflair.linkflair-politics .linkflairlabel::before, .linkflair-politics .linkflairlabel::before {
+	background-position: 0 -1224px;
 }
 
-.thing.linkflair.linkflair-e .entry, .flairselector .linkflair-e {
-	border-right: 10px solid #e1db79;
+.thing.linkflair.linkflair-questions .linkflairlabel::before, .linkflair-questions .linkflairlabel::before {
+	background-position: 0 -8704px;
 }
 
-.thing.linkflair.linkflair-e .linkflairlabel {
-	border-bottom: solid 2px #e1db79;
+.thing.linkflair.linkflair-society .linkflairlabel::before, .linkflair-society .linkflairlabel::before {
+	background-position: 0 -5576px;
 }
 
-.thing.linkflair.linkflair-f .entry, .flairselector .linkflair-f {
-	border-right: 10px solid #b179e1;
+.thing.linkflair.linkflair-sports .linkflairlabel::before, .linkflair-sports .linkflairlabel::before {
+	background-position: 0 -11662px;
 }
 
-.thing.linkflair.linkflair-f .linkflairlabel {
-	border-bottom: solid 2px #b179e1;
+.thing.linkflair.linkflair-technology .linkflairlabel::before, .linkflair-technology .linkflairlabel::before {
+	background-position: 0 -9418px;
 }
 
-.thing.linkflair.linkflair-g .entry, .flairselector .linkflair-g {
-	border-right: 10px solid #FCDFFF;
+.thing.linkflair.linkflair-tourism .linkflairlabel::before, .linkflair-tourism .linkflairlabel::before {
+	background-position: 0 -8296px;
 }
 
-.thing.linkflair.linkflair-g .linkflairlabel {
-	border-bottom: solid 2px #FCDFFF;
-}
+
 
 /* not enough flairs?  Simply copy the following text and change <CLASS>  to whatever class you want to name the flair and <COLOR> to a valid hex color (#ff0000 for example)
 
@@ -2996,3 +2961,71 @@ a[href='#icon-zoom-out']::before {
 FlatBlue reddit CSS Theme v1.2 - (http://www.reddit.com/r/FlatBlue/)
 ==========
 */
+
+
+/*
+bolded sidebar
+*/
+  .side .md a[href*="/wiki/reddit_101"],
+  .side .md a[href*="/r/greece/wiki/reddit_101"],
+  .side .md a[href*="/r/greece/wiki/faq"]{
+        background: #44AC23;
+        background: -webkit-linear-gradient(top,#7BB850,#69A53F);
+        background: -moz-linear-gradient(top,#7BB850,#69A53F);
+        background: -ms-linear-gradient(top,#7BB850,#69A53F);
+        background: -o-linear-gradient(top,#7BB850,#69A53F);
+        background: linear-gradient(top,#7BB850,#69A53F);
+        border: 1px solid #5E9C4E;
+        border-bottom: 1px solid #65A854;
+        color: white !important;
+        display: block;
+        clear: both;
+        font: 11px arial,sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        height: 27px;
+        line-height: 27px;
+        margin-bottom: 6px;
+        min-width: 54px !important;
+        outline: 0;
+        padding: 0 4px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    
+/* == Subscript and superscript, taken from http://redd.it/beuzq == */
+
+.md em{
+    position: relative;
+}
+
+/* *_sub_* */
+.md em em{
+    font-style: normal;
+    vertical-align: sub;
+    font-size: 80%;
+}
+
+/* *`sup`* */
+.md em code{
+    font-family: verdana, arial, helvetica, sans-serif;
+    vertical-align: super;
+    font-size: 80%;
+}
+
+/* *_sub_`sup`* */
+.md em em+code{
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    vertical-align: super;
+}
+
+/* *`sup`_sub_* */
+.md em code+em{
+    position: absolute;
+    left: 0;
+    top: 1em;
+    vertical-align: sub;
+}
