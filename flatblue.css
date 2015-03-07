@@ -1,6 +1,6 @@
 /* 
 ==========
-FlatBlue reddit CSS Theme v1.2 - (http://www.reddit.com/r/FlatBlue/)
+FlatBlue reddit CSS Theme v1.5 - (http://www.reddit.com/r/FlatBlue/)
 
 Resources needed:
 - header-blue.png 
@@ -103,6 +103,7 @@ body .side .title,
 .tagline,
 .flat-list,
 .bottommenu,
+#sr-header-area .dropdown.srdrop span.selected.title,
 .submit-page .roundfield #suggested-reddits {
 	font-size: 10px !important;
 }
@@ -234,6 +235,23 @@ a[href$="#spoiler"][title]::before {
 	margin: 5px 0px;
 }
 
+.md h1, .commentarea h1, .wiki-page .wiki-page-content .md .wiki h1 { 
+    font-size: 1.6em !important;
+    font-weight: bold;
+}
+
+.md h2, .commentarea h2, .wiki-page .wiki-page-content .md .wiki h2
+{ 
+    font-size: 1.4em;
+    font-weight: bold;    
+    font-style: italic;
+}
+.md h3, .commentarea h3, .wiki-page .wiki-page-content .md .wiki h3
+{ 
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 /*
 ---------------------  
 header area  
@@ -261,12 +279,17 @@ body:not(.search-page) #search input[type="text"] {
 	top: 108px;
 }
 
+body:not(.search-page) #search input[type=submit] {
+    top: 132px;
+}
+
 #searchexpando {
 	top: 132px;
 }
 
 .side blockquote blockquote blockquote {
 	top: 97px;
+	margin: 0 !important;
 }
 
 /*
@@ -306,6 +329,13 @@ body:not(.search-page) #search input[type="text"] {
 
 /* subreddit bar at the top */
 body #sr-header-area, body #sr-header-area a {
+}
+
+#sr-header-area .dropdown.srdrop span.selected.title {
+    font-weight: normal;
+    margin: 0 10px 0 -5px;
+    border: 0;
+
 }
 
 #sr-header-area {
@@ -393,6 +423,13 @@ body:not(.search-page) #search input[type="text"] {
 	height: 22px;
 	padding: 2px;
 	font-weight: normal !important;
+}
+
+body:not(.search-page) #search input[type=submit] {
+    position: absolute;
+    z-index: 200;
+    right: 17px;
+    border: 0 !important;
 }
 
 #search {
@@ -788,6 +825,11 @@ color: #858585;
 
 /* comments area */
 
+.comment .usertext-body .md, .self .usertext-body .md, .side .md, .md.wiki {
+    line-height: 1.5em !important;
+}
+
+
 .commentarea .flat-list.buttons {
 display: block;
 }
@@ -841,7 +883,10 @@ body .content .md blockquote {
 /* code numbering, based on the css found at /r/modtools */
 .md pre {
     background-color: #F5F5F5 !important;
+    border: 0;
+    overflow: visible !important;
     border-left: 31px solid #4BA6E0;
+    padding: 0;
     position: relative;
     margin-top: 25px;
     line-height: 15px;
@@ -854,7 +899,9 @@ body .content .md blockquote {
 }
 
 .md pre code {
-    padding: 15px;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+	padding-left: 5px !important;
     overflow: auto;
     display: block;
     line-height: 15px;
@@ -871,6 +918,7 @@ body .content .md blockquote {
     background: url(%%sprite-icon-16%%) no-repeat top left;
     background-position: 0 -2516px;
 }
+
 
 .md pre:before {
     height: 100%;
@@ -1067,6 +1115,15 @@ body div.side {
 	border-bottom: solid 20px #E9E9E9;
 }
 
+body .side .md p {			
+    margin: 5px 0 !important;			
+}
+
+.side .md .-blocks, .side .md .-lists, .side .md blockquote, .side .md table, .side .md p, .side .md ul, .side .md ol {
+    line-height: 1.5em!important;
+}
+
+
 /* message the moderators */ 
 .side .sidecontentbox a.helplink {
 	float: none;
@@ -1234,8 +1291,10 @@ h1.redditname:hover {
 .side h6 {
 	color: #FFF!important;
 	font-weight: normal!important;
+	text-decoration: none;
+	margin: 0;
 	display: block;
-	padding-left: 2px;
+	padding: 3px;
 	font-size: 140%;
 	background: #FF6766;
 }
@@ -1252,15 +1311,16 @@ h1.redditname:hover {
 .side h5 {
 	color: #FFF!important;
 	font-weight: normal!important;
+	margin: 0;
 	display: block;
-	padding-left: 2px;
+	padding: 3px;
 	font-size: 140%;
-	background: #68ADCE;
+	background: #5F99CF;
 }
 
 .side h5+blockquote {
 	display: block;
-	background-color: #EAEAFF;
+	background-color: #CEE3F8;
 	border: 0;
 	color: #000!important;
 	margin: 0px 0 5px 0 !important;
@@ -1269,9 +1329,10 @@ h1.redditname:hover {
 
 .side h4 {
 	color: #FFF!important;
-	font-weight: normal!important;
+	font-weight: normal !important;
+	margin: 0;
 	display: block;
-	padding-left: 2px;
+	padding: 3px;
 	font-size: 140%;
 	background: #1000C0;
 }
@@ -1284,7 +1345,6 @@ h1.redditname:hover {
 	margin: 0px 0 5px 0 !important;
 	padding: 5px;
 }
-
 
 /*
 ---------------------  
@@ -2958,7 +3018,7 @@ a[href='#icon-zoom-out']::before {
 
 /* 
 ==========
-FlatBlue reddit CSS Theme v1.2 - (http://www.reddit.com/r/FlatBlue/)
+FlatBlue reddit CSS Theme v1.5 - (http://www.reddit.com/r/FlatBlue/)
 ==========
 */
 
