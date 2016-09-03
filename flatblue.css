@@ -738,17 +738,17 @@ p.title {
 
 /* RES expando's */
 .expando-button.image {
-float: left;
-width: 23px;
-height: 23px;
-max-width: 23px;
-max-height: 23px;
-display: inline-block;
-background-image: url(%%reddit-res-sprite-icons%%);
-margin-right: 6px;
-cursor: pointer;
-padding: 0px;
-vertical-align: top;
+	float: left;
+	width: 23px;
+	height: 23px;
+	max-width: 23px;
+	max-height: 23px;
+	display: inline-block;
+	background-image: url(%%reddit-res-sprite-icons%%);
+	margin-right: 6px;
+	cursor: pointer;
+	padding: 0px;
+	vertical-align: top;
 }
 
 .expando-button.image.gallery.collapsedExpando {
