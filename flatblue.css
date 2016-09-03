@@ -3133,3 +3133,8 @@ bolded sidebar
     top: 1em;
     vertical-align: sub;
 }
+
+/* Adding some colour to dspin flair*/
+.flair.flair-dspin1{ color: blue;
+    font-weight: bold;
+}
