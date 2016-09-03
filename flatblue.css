@@ -114,6 +114,10 @@ a:hover, a:visited:hover {
 	color: #1000C0;
 }
 
+div#header-bottom-left {
+    margin-top: 100px;
+}
+
 input {
 	border: 1px solid #C1BFBF !important;
 }
@@ -318,6 +322,7 @@ body:not(.search-page) #search input[type=submit] {
 	font-variant: normal;
 	font-weight: normal;
 	color: #fff;
+	/* font-size: xx-large; */
 }
 
 .hover.pagename.redditname > a:before {
@@ -437,6 +442,9 @@ body:not(.search-page) #search input[type=submit] {
 
 #search {
 	text-align: center;
+	position: absolute;
+	top: 100px;
+	margin-left: 290px;	
 }
 
 #searchexpando {
@@ -1458,6 +1466,13 @@ Most things flair related
 	background-position: 0 -8296px;
 }
 
+.thing.linkflair.linkflair-science .linkflairlabel::before, .linkflair-tourism .linkflairlabel::before {
+	background-position: 0 -816px;
+}
+
+.thing.linkflair.linkflair-food .linkflairlabel::before, .linkflair-tourism .linkflairlabel::before {
+	background-position: 0 -4963px;
+}
 
 
 /* not enough flairs?  Simply copy the following text and change <CLASS>  to whatever class you want to name the flair and <COLOR> to a valid hex color (#ff0000 for example)
