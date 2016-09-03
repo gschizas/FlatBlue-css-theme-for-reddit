@@ -3044,9 +3044,11 @@ FlatBlue reddit CSS Theme v1.6 - (http://www.reddit.com/r/FlatBlue/)
 /*
 bolded sidebar
 */
+  .side .md a[href="http://www.oloimaziboroume.gr/epistrefo"],
   .side .md a[href*="/wiki/reddit_101"],
   .side .md a[href*="/r/greece/wiki/reddit_101"],
-  .side .md a[href*="/r/greece/wiki/faq"]{
+  .side .md a[href*="/r/greece/wiki/faq"],
+  .side .md a[href*="/r/greece/comments/4oq1zj/"]{
         background: #44AC23;
         background: -webkit-linear-gradient(top,#7BB850,#69A53F);
         background: -moz-linear-gradient(top,#7BB850,#69A53F);
@@ -3069,7 +3071,32 @@ bolded sidebar
         padding: 0 4px;
         text-align: center;
     }
+
+  .side .md a[href*="/wiki/reddit_101"],
+  .side .md a[href*="/r/greece/wiki/reddit_101"],
+  .side .md a[href*="/r/greece/wiki/faq"]{
+        background: #44AC23;
+        background: -webkit-linear-gradient(top,#7BB850,#69A53F);
+        background: -moz-linear-gradient(top,#7BB850,#69A53F);
+        background: -ms-linear-gradient(top,#7BB850,#69A53F);
+        background: -o-linear-gradient(top,#7BB850,#69A53F);
+        background: linear-gradient(top,#7BB850,#69A53F);
+        border: 1px solid #5E9C4E;
+    }
+
     
+    .side .md a[href="http://www.oloimaziboroume.gr/epistrefo"],
+    .side .md a[href*="/r/greece/comments/4oq1zj/"] {
+        background: #2345AA;
+        background: -webkit-linear-gradient(top,#507BB7,#3F69A3);
+        background: -moz-linear-gradient(top,#507BB7,#3F69A3);
+        background: -ms-linear-gradient(top,#507BB7,#3F69A3);
+        background: -o-linear-gradient(top,#507BB7,#3F69A3);
+        background: linear-gradient(top,#507BB7,#3F69A3);
+        border: 1px solid #2345AA;
+    }
+
+
     
 /* == Subscript and superscript, taken from http://redd.it/beuzq == */
 
