@@ -347,13 +347,13 @@ body #sr-header-area, body #sr-header-area a {
 }
 
 #sr-header-area {
-	background-color: #FAFAFA;
+	background-color: rgba(70, 133, 178, 0.27);
 	color: #333333;
 	border-bottom: 0;
 }
 
 #RESShortcutsEditContainer, #RESShortcutsRight, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsLeft, #sr-more-link, #RESShortcutsSort {
-	background-color: #FAFAFA !important;
+	background-color: #B2CAE4 !important;
 }
 
 .subscribe-button .RESshortcutside:hover {
@@ -393,7 +393,7 @@ body #sr-header-area, body #sr-header-area a {
 
 #header-bottom-right {
 	height: 18px;
-	background-color: #4BA6E0;
+	background-color: rgba(164, 193, 199, 0.37);
 	padding: 2px !important;
 	color: #FFF;
 	line-height: 16px;
@@ -493,7 +493,7 @@ blockquote blockquote blockquote {
 /* tabmenu */
 .tabmenu li a, .tabmenu.formtab li a {
 	padding: 0px 6px 0 6px;
-	background-color: #4BA6E0;
+	background-color: transparent;
 	color: #FFF;
 	border: 0;
 	height: 20px;
@@ -503,13 +503,13 @@ blockquote blockquote blockquote {
 }
 
 .tabmenu li a:hover, .tabmenu.formtab li a:hover {
-	background-color: #1000C0;
 	color: #fff;
+	text-shadow: 0px 0px 4px black;	
 }
 
 .tabmenu li.selected a, .tabmenu.formtab li.selected a {
 	color: #FFF;
-	background-color: #1000C0;
+	background-color: rgba(99, 136, 205, 0.5);	
 	border: 0;
 	z-index: 100;
 	height: 20px;
@@ -1155,7 +1155,7 @@ body .side .md p {
 }
 
 .side .sidecontentbox a.helplink:hover {
-	background-color: #1000C0 !important;
+	background-color: #5A87BA !important;
 }
 
 .side .spacer {
@@ -1180,7 +1180,7 @@ body .side .md p {
 }
 
 body .morelink:hover {
-	background-color: #1000C0;
+	background-color: #2649BA;
 }
 
 .morelink .nub {
