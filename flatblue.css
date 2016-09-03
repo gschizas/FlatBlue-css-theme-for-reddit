@@ -261,8 +261,11 @@ header area
 /* Background image and color for the header */
 #header {
 	background: url(%%header-santorini%%) no-repeat bottom left;
+	background-size: 100% auto;
 	background-color: #479DD3;
 	border: 0;
+	height: 200px;
+	background-position: 0px, -400px;
 }
 
 /* this is what basically determins the header height. The margin at the top will increase or decrease how big it is. 
